@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="left">
+            <nav>
+                <div class="menu-item">
+
+                    <a href="#">Меню</a>
+                </div>
+                <a href="#">Про нас</a>
+                <a href="#">Спеціальні пропозиції</a>
+            </nav>
+        </div>
+
+        <div class="logo">
+            <img src="image/ouiyoo.jpg" alt="64">
+        </div>
+
+        <div class="contact-info">
+            <p>Телефон: (380) 848-54-09</p>
+            <p>Email:irjg@sjdfhsj.com.ua</p>
+            <p>Адреса:Київ,вул.Анни Ахматової, 22</p>
+            <div class="social-links">
+                <a href="#"><img src="image/werwer.jfif" alt="facebook"></a>
+                <a href="#"><img src="image/yuyuy.jfif" alt="instagram"></a>
+                <a href="#"><img src="image/kgkg.png" alt="twiter"></a>
+            </div>
+        </div>
+    </header>
+<div class="shopping_cart">
+            <div class="shopping">
+                <img src="image/shopping-cart-png-image-shopping-cart-icon-sv-11562865326ta92uix1ak.png">
+                <span class="quantity">0</span>
+            </div>
+        </div>
+        <div class="list">
+        </div>
+        <div class="cards">
+            <h1>Товари у кошику</h1>
+            <ul class="listCard">
+            </ul>
+            <div class="checkOut">
+                <div class="total">0</div>
+                <div class="closeShopping">Закрити</div>
+            </div>
+        </div>
+    <div class="cards-container">
+        <div class="card" onclick="openModal('modal1')">
+            <img src="image/1.jpeg" alt="RTX 4090 (NEW)">
+            <h2>RTX 4090 NEW</h2>
+            <p>В наявності</p>
+            <p>99 999ГРН</p>
+            <button onclick="addToCard(0)">Додати в кошик</button>
+        </div>
+        <div class="card" onclick="openModal('modal2')">
+            <img src="image/2.jpg" alt="RTX 4080 (Old)">
+            <h2>RTX 4080 Old</h2>
+            <p>В наявності</p>
+            <p>60 000ГРН</p>
+            <button onclick="addToCard(1)">Додати в кошик</button>
+        </div>
+        <div class="card" onclick="openModal('modal3')">
+            <img src="image/3.jpg" alt="korpus-dlya-pc">
+            <h2>korpus-dlya-pc NEW</h2>
+            <p>В наявності</p>
+            <p>15 000ГРН</p>
+            <button onclick="addToCard(2)">Додати в кошик</button>
+        </div>
+        <div class="card" onclick="openModal('modal4')">
+            <img src="image/4.jpg" alt="Besprovodnaya-klaviatura-10-1000x1000">
+            <h2>klava Old</h2>
+            <p>В наявності</p>
+            <p>10 000ГРН</p>
+            <button onclick="addToCard(3)">Додати в кошик</button>
+        </div>
+        <div class="card" onclick="openModal('modal5')">
+            <img src="image/5.jpg"besprovodnaya-myshka-4-1000x1000">
+            <h2>myshka Old</h2>
+            <p>В наявності</p>
+            <p>5 000ГРН</p>
+            <button onclick="addToCard(4)">Додати в кошик</button>
+        </div>
+        <div class="card" onclick="openModal('modal6')">
+            <img src="image/6.png" alt="Iphone15 (NEW)">
+            <h2>Iphone15 NEW</h2>
+            <p>В наявності</p>
+            <p>39 999ГРН</p>
+            <button onclick="addToCard(5)">Додати в кошик</button>
+        </div>
+        <div class="card" onclick="openModal('modal7')">
+            <img src="image/shopping.webp" alt="Noytbyk (NEW)">
+            <h2>Noytbyk NEW</h2>
+            <p>В наявності</p>
+            <p>44 999ГРН</p>
+            <button onclick="addToCard(6)">Додати в кошик</button>
+        </div>
+        <div class="card" onclick="openModal('modal8')">
+            <img src="image/2858465775_w600_h600_2858465775.webp" alt="3D printer (NEW)">
+            <h2>3D printer NEW</h2>
+            <p>В наявності</p>
+            <p>19 999ГРН</p>
+            <button onclick="addToCard(7)">Додати в кошик</button>
+        </div>
+        <div class="card" onclick="openModal('modal9')">
+            <img src="image/64.webp" alt="Konducioner (Old)">
+            <h2>Konducioner Old</h2>
+            <p>В наявності</p>
+            <p>14 999ГРН</p>
+            <button onclick="addToCard(8)">Додати в кошик</button>
+        </div>
+        <div class="card" onclick="openModal('modal10')">
+            <img src="image/brimnes-tv-unit-white__0850897_pe725294_s5.avif" alt="TV (Old)">
+            <h2>TV Old</h2>
+            <p>В наявності</p>
+            <p>49 999ГРН</p>
+            <button onclick="addToCard(9)">Додати в кошик</button>
+        </div>
+        <div class="card" onclick="openModal('modal11')">
+            <img src="image/7dch8vg9lz0tzeg74u3x9paoln4o8z319478.avif" alt="Tablet (NEW)">
+            <h2>Tablet NEW</h2>
+            <p>В наявності</p>
+            <p>34 999ГРН</p>
+            <button onclick="addToCard(10)">Додати в кошик</button>
+        </div>
+        <div class="card" onclick="openModal('modal12')">
+            <img src="image/Без названия (1).jfif" alt="Camera (NEW)">
+            <h2>Camera NEW</h2>
+            <p>В наявності</p>
+            <p>49 999ГРН</p>
+            <button onclick="addToCard(11)">Додати в кошик</button>
+        </div>
+        <div class="card" onclick="openModal('modal13')">
+            <img src="image/hfndj.jfif" alt="Camera (NEW)">
+            <h2>Camera NEW</h2>
+            <p>В наявності</p>
+            <p>99 999ГРН</p>
+            <button onclick="addToCard(12)">Додати в кошик</button>
+        </div>
+        <div class="card" onclick="openModal('modal14')">
+            <img src="image/аорпваорпва.jfif" alt="Tymba (NEW)">
+            <h2>Tymba NEW</h2>
+            <p>В наявності</p>
+            <p>9 999ГРН</p>
+            <button onclick="addToCard(13)">Додати в кошик</button>
+        </div>
+        <div class="card" onclick="openModal('modal15')">
+            <img src="image/erererer.jfif" alt="playstation 5 (Old)">
+            <h2>playstation 5 Old</h2>
+            <p>В наявності</p>
+            <p>29 999ГРН</p>
+            <button onclick="addToCard(14)">Додати в кошик</button>
+        </div>
+        <div class="card" onclick="openModal('modal16')">
+            <img src="image/shopping.webp" alt="Html (Old)">
+            <h2>Html Old</h2>
+            <p>В наявності</p>
+            <p>999ГРН</p>
+            <button onclick="addToCard(15)">Додати в кошик</button>
+        </div>
+    </div>
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal1')">&times;</span>
+            <div class="modal-flex">
+                <img class="modal-img" src="image/1.jpeg">
+                <div class="modal-info">
+                    <h2>RTX 4090</h2>
+                    <p><strong>Нова</strong> </p>
+                    <p><strong>З неоном</strong></p>
+                    <ul>
+                        <li>крутий вибір для геймерів</li>
+                        <li>ціна-99 999грн</li>
+                        <li>для КОМП'ЮТЕРІВ</li>
+                        <li>багато ФПС в іграх</li>
+                        <li>потрібен корпус</li>
+                        <li>нова серія</li>
+                    </ul>
+                    <p><strong>Інформація про доставку:</strong> Стандартна доставка протягом 3-5 робочих днів.
+                        Експрес-доставка
+                        доступна за додаткову плату.</p>
+                    <button onclick="addToCard(0)">Додати в кошик</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal2')">&times;</span>
+            <div class="modal-flex">
+                <img class="modal-img" src="image/2.jpg">
+                <div class="modal-info">
+                    <h2>RTX 4080</h2>
+                    <p><strong>Нова</strong> </p>
+                    <p><strong>З неоном</strong></p>
+                    <ul>
+                        <li>крутий вибір для геймерів</li>
+                        <li>ціна-60 000ГРН</li>
+                        <li>для КОМП'ЮТЕРІВ</li>
+                        <li>багато ФПС в іграх</li>
+                        <li>потрібен корпус</li>
+                        <li>нова серія</li>
+                    </ul>
+                    <p><strong>Інформація про доставку:</strong> Стандартна доставка протягом 3-5 робочих днів.
+                        Експрес-доставка
+                        доступна за додаткову плату.</p>
+                    <button onclick="addToCard(1)">Додати в кошик</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal3" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal3')">&times;</span>
+            <div class="modal-flex">
+                <img class="modal-img" src="image/3.jpg">
+                <div class="modal-info">
+                    <h2>korpus-dlya-pc</h2>
+                    <p><strong>Нова</strong> </p>
+                    <p><strong>З неоном</strong></p>
+                    <ul>
+                        <li>крутий вибір для геймерів</li>
+                        <li>ціна-15 000ГРН</li>
+                        <li>для КОМП'ЮТЕРІВ</li>
+                        <li>багато ФПС в іграх</li>
+                        <li>потрібен корпус</li>
+                        <li>нова серія</li>
+                    </ul>
+                    <p><strong>Інформація про доставку:</strong> Стандартна доставка протягом 3-5 робочих днів.
+                        Експрес-доставка
+                        доступна за додаткову плату.</p>
+                    <button onclick="addToCard(2)">Додати в кошик</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal4" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal4')">&times;</span>
+            <div class="modal-flex">
+                <img class="modal-img" src="image/4.jpg">
+                <div class="modal-info">
+                    <h2>klava</h2>
+                    <p><strong>Нова</strong> </p>
+                    <p><strong>З неоном</strong></p>
+                    <ul>
+                        <li>крутий вибір для геймерів</li>
+                        <li>ціна-10 000ГРН</li>
+                        <li>для КОМП'ЮТЕРІВ</li>
+                        <li>багато ФПС в іграх</li>
+                        <li>потрібен корпус</li>
+                        <li>нова серія</li>
+                    </ul>
+                    <p><strong>Інформація про доставку:</strong> Стандартна доставка протягом 3-5 робочих днів.
+                        Експрес-доставка
+                        доступна за додаткову плату.</p>
+                    <button onclick="addToCard(3)">Додати в кошик</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal5" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal5')">&times;</span>
+            <div class="modal-flex">
+                <img class="modal-img" src="image/5.jpg">
+                <div class="modal-info">
+                    <h2>myshka</h2>
+                    <p><strong>Нова</strong> </p>
+                    <p><strong>З неоном</strong></p>
+                    <ul>
+                        <li>крутий вибір для геймерів</li>
+                        <li>ціна-5 000ГРН</li>
+                        <li>для КОМП'ЮТЕРІВ</li>
+                        <li>багато ФПС в іграх</li>
+                        <li>потрібен корпус</li>
+                        <li>нова серія</li>
+                    </ul>
+                    <p><strong>Інформація про доставку:</strong> Стандартна доставка протягом 3-5 робочих днів.
+                        Експрес-доставка
+                        доступна за додаткову плату.</p>
+                    <button onclick="addToCard(4)">Додати в кошик</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal6" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal6')">&times;</span>
+            <div class="modal-flex">
+                <img class="modal-img" src="image/6.png">
+                <div class="modal-info">
+                    <h2>Iphone15</h2>
+                    <p><strong>Нова</strong> </p>
+                    <p><strong>З неоном</strong></p>
+                    <ul>
+                        <li>крутий вибір для геймерів</li>
+                        <li>ціна-39 999ГРН</li>
+                        <li>для КОМП'ЮТЕРІВ</li>
+                        <li>багато ФПС в іграх</li>
+                        <li>потрібен корпус</li>
+                        <li>нова серія</li>
+                    </ul>
+                    <p><strong>Інформація про доставку:</strong> Стандартна доставка протягом 3-5 робочих днів.
+                        Експрес-доставка
+                        доступна за додаткову плату.</p>
+                    <button onclick="addToCard(5)">Додати в кошик</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="modal7" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal7')">&times;</span>
+            <div class="modal-flex">
+                <img class="modal-img" src="image/shopping.webp">
+                <div class="modal-info">
+                    <h2>Noytbyk</h2>
+                    <p><strong>Нова</strong> </p>
+                    <p><strong>З неоном</strong></p>
+                    <ul>
+                        <li>крутий вибір для геймерів</li>
+                        <li>ціна-44 999ГРН</li>
+                        <li>для КОМП'ЮТЕРІВ</li>
+                        <li>багато ФПС в іграх</li>
+                        <li>потрібен корпус</li>
+                        <li>нова серія</li>
+                    </ul>
+                    <p><strong>Інформація про доставку:</strong> Стандартна доставка протягом 3-5 робочих днів.
+                        Експрес-доставка
+                        доступна за додаткову плату.</p>
+                    <button onclick="addToCard(6)">Додати в кошик</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="modal8" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal8')">&times;</span>
+            <div class="modal-flex">
+                <img class="modal-img" src="image/2858465775_w600_h600_2858465775.webp">
+                <div class="modal-info">
+                    <h2>3D printer</h2>
+                    <p><strong>Нова</strong> </p>
+                    <p><strong>З неоном</strong></p>
+                    <ul>
+                        <li>крутий вибір</li>
+                        <li>ціна-19 999ГРН</li>
+                        <li>для КОМП'ЮТЕРІВ</li>
+                        <li>багато ігр</li>
+                        <li>потрібен корпус</li>
+                        <li>нова серія</li>
+                    </ul>
+                    <p><strong>Інформація про доставку:</strong> Стандартна доставка протягом 3-5 робочих днів.
+                        Експрес-доставка
+                        доступна за додаткову плату.</p>
+                    <button onclick="addToCard(7)">Додати в кошик</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal9" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal9')">&times;</span>
+            <div class="modal-flex">
+                <img class="modal-img" src="image/64.webp">
+                <div class="modal-info">
+            <h2>Konducioner</h2>
+            <p><strong>Нова</strong> </p>
+            <p><strong>З неоном</strong></p>
+            <ul>
+                <li>крутий вибір для геймерів</li>
+                <li>ціна-14 999грн</li>
+                <li>для КОМП'ЮТЕРІВ</li>
+                <li>багато ФПС в іграх</li>
+                <li>потрібен корпус</li>
+                <li>нова серія</li>
+            </ul>
+            <p><strong>Інформація про доставку:</strong> Стандартна доставка протягом 3-5 робочих днів. Експрес-доставка
+                доступна за додаткову плату.</p>
+                <button onclick="addToCard(8)">Додати в кошик</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="modal10" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal10')">&times;</span>
+            <div class="modal-flex">
+                <img class="modal-img" src="image/brimnes-tv-unit-white__0850897_pe725294_s5.avif">
+                <div class="modal-info">
+                    <h2>TV</h2>
+                    <p><strong>Нова</strong> </p>
+                    <p><strong>З неоном</strong></p>
+                    <ul>
+                        <li>крутий вибір</li>
+                        <li>ціна-49 999ГРН</li>
+                        <li>для КОМП'ЮТЕРІВ</li>
+                        <li>багато ігр</li>
+                        <li>потрібен корпус</li>
+                        <li>нова серія</li>
+                    </ul>
+                    <p><strong>Інформація про доставку:</strong> Стандартна доставка протягом 3-5 робочих днів.
+                        Експрес-доставка
+                        доступна за додаткову плату.</p>
+                    <button onclick="addToCard(9)">Додати в кошик</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal11" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal11')">&times;</span>
+            <div class="modal-flex">
+                <img class="modal-img" src="image/7dch8vg9lz0tzeg74u3x9paoln4o8z319478.avif">
+                <div class="modal-info">
+            <h2>Tablet</h2>
+            <p><strong>Нова</strong> </p>
+            <p><strong>З неоном</strong></p>
+            <ul>
+                <li>крутий вибір для геймерів</li>
+                <li>ціна-34 999грн</li>
+                <li>для КОМП'ЮТЕРІВ</li>
+                <li>багато ФПС в іграх</li>
+                <li>потрібен корпус</li>
+                <li>нова серія</li>
+            </ul>
+            <p><strong>Інформація про доставку:</strong> Стандартна доставка протягом 3-5 робочих днів. Експрес-доставка
+                доступна за додаткову плату.</p>
+                <button onclick="addToCard(10)">Додати в кошик</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="modal12" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal12')">&times;</span>
+            <div class="modal-flex">
+                <img class="modal-img" src="image/Без названия (1).jfif">
+                <div class="modal-info">
+                    <h2>Camera</h2>
+                    <p><strong>Нова</strong> </p>
+                    <p><strong>З неоном</strong></p>
+                    <ul>
+                        <li>крутий вибір</li>
+                        <li>ціна-49 999ГРН</li>
+                        <li>для КОМП'ЮТЕРІВ</li>
+                        <li>багато ігр</li>
+                        <li>потрібен корпус</li>
+                        <li>нова серія</li>
+                    </ul>
+                    <p><strong>Інформація про доставку:</strong> Стандартна доставка протягом 3-5 робочих днів.
+                        Експрес-доставка
+                        доступна за додаткову плату.</p>
+                    <button onclick="addToCard(11)">Додати в кошик</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="modal13" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal13')">&times;</span>
+            <div class="modal-flex">
+                <img class="modal-img" src="image/hfndj.jfiff">
+                <div class="modal-info">
+            <h2>Camera</h2>
+            <p><strong>Нова</strong> </p>
+            <p><strong>З неоном</strong></p>
+            <ul>
+                <li>крутий вибір для геймерів</li>
+                <li>ціна-99 999грн</li>
+                <li>для КОМП'ЮТЕРІВ</li>
+                <li>багато ФПС в іграх</li>
+                <li>потрібен корпус</li>
+                <li>нова серія</li>
+            </ul>
+            <p><strong>Інформація про доставку:</strong> Стандартна доставка протягом 3-5 робочих днів. Експрес-доставка
+                доступна за додаткову плату.</p>
+                <button onclick="addToCard(12)">Додати в кошик</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="modal14" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal14')">&times;</span>
+            <div class="modal-flex">
+                <img class="modal-img" src="image/аорпваорпва.jfif">
+                <div class="modal-info">
+                    <h2>Tymba</h2>
+                    <p><strong>Нова</strong> </p>
+                    <p><strong>З неоном</strong></p>
+                    <ul>
+                        <li>крутий вибір</li>
+                        <li>ціна-9 999ГРН</li>
+                        <li>для КОМП'ЮТЕРІВ</li>
+                        <li>багато ігр</li>
+                        <li>потрібен корпус</li>
+                        <li>нова серія</li>
+                    </ul>
+                    <p><strong>Інформація про доставку:</strong> Стандартна доставка протягом 3-5 робочих днів.
+                        Експрес-доставка
+                        доступна за додаткову плату.</p>
+                    <button onclick="addToCard(13)">Додати в кошик</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="modal15" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal15')">&times;</span>
+            <div class="modal-flex">
+                <img class="modal-img" src="image/erererer.jfif">
+                <div class="modal-info">
+            <h2>playstation 5</h2>
+            <p><strong>Нова</strong> </p>
+            <p><strong>З неоном</strong></p>
+            <ul>
+                <li>крутий вибір для геймерів</li>
+                <li>ціна-29 999грн</li>
+                <li>для КОМП'ЮТЕРІВ</li>
+                <li>багато ФПС в іграх</li>
+                <li>потрібен корпус</li>
+                <li>нова серія</li>
+            </ul>
+            <p><strong>Інформація про доставку:</strong> Стандартна доставка протягом 3-5 робочих днів. Експрес-доставка
+                доступна за додаткову плату.</p>
+                <button onclick="addToCard(14)">Додати в кошик</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="modal16" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal16')">&times;</span>
+            <div class="modal-flex">
+                <img class="modal-img" src="image/shopping.webp">
+                <div class="modal-info">
+            <h2>Html</h2>
+            <p><strong>Нова</strong> </p>
+            <p><strong>З неоном</strong></p>
+            <ul>
+                <li>крутий вибір для геймерів</li>
+                <li>ціна-999грн</li>
+                <li>для КОМП'ЮТЕРІВ</li>
+                <li>багато ФПС в іграх</li>
+                <li>потрібен корпус</li>
+                <li>нова серія</li>
+            </ul>
+            <p><strong>Інформація про доставку:</strong> Стандартна доставка протягом 3-5 робочих днів. Експрес-доставка
+                доступна за додаткову плату.</p>
+                <button onclick="addToCard(15)">Додати в кошик</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Контакти</h3>
+                <p>Телефон: (380) 848-54-09</p>
+                <p>Email:irjg@sjdfhsj.com.ua</p>
+                <p>Адреса:Київ,вул.Анни Ахматової, 22</p>
+            </div>
+            <div class="footer-section">
+                <h3>Інформація</h3>
+                <ul>
+                    <li><a href="#">Доставка і оплата</a></li>
+                    <li><a href="#">Гарантія і повернення</a></li>
+                    <li><a href="#">Політика конфіденційності</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Соціальні мережі</h3>
+                <div class="social-links">
+                    <a href="#"><img src="temeg/werwer.jfif" alt="facebook"></a>
+                    <a href="#"><img src="temeg/yuyuy.jfif" alt="instagram"></a>
+                    <a href="#"><img src="temeg/kgkg.png" alt="twiter"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+
+</html>
